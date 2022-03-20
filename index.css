@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+}
+/*menu*/
+nav{
+    padding: 0.7rem;
+}
+h2{
+    text-align: start;
+    color: floralwhite;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul a{
+    display:inline-block;
+    padding: 0.7rem;
+    text-decoration: none;
+}
+nav ul a:hover{
+    color: floralwhite;
+    font-weight: bold;
+}
+/*index*/
+.container1{ display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav"
+      "section1 section1"
+      "section2 section2"
+      "section3 section4"
+      "footer footer";
+  }
+  @media screen and (max-width:400px){
+    .container1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "nav"
+        "section1"
+        "section2"
+        "section3" 
+        "section4"
+        "footer";
+        align-items: center;
+        }
+    }
+  
+  .nav { grid-area: nav;}
+
+  .section1 { grid-area: section1; 
+    background-image: url(./fotos/primera_imagen2.0.jpeg);
+    background-size: cover;
+    height: 40rem;
+    text-align: center;
+  }
+  @media screen and (max-width:400px){
+    .section1{
+        height: 20rem;
+        align-items: center;
+        }
+    }
+  
+  .section2 { grid-area: section2; 
+    background-image: url(./fotos/indoor_8.png);
+    background-size: cover;
+    height: 40rem;
+    text-align: center;
+  }
+  @media screen and (max-width:400px){
+    .section2{
+        height: 20rem;
+        align-items: center;
+        }
+    }
+  
+  .section3 { grid-area: section3; 
+    background-image: url(./fotos/indoor_5.jpeg);
+    height: 40rem;
+    background-size: contain;
+    background-position: 60px;
+  }
+  .titlecomprarclase{
+    font-size: 3rem;
+    text-align: center;
+  }
+  @media screen and (max-width:400px){
+    .section3{
+        height: 20rem;
+        align-items: center;
+        }
+    }
+  
+  .section4 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "opcion1 opcion2"
+      "opcion3 opcion4"
+      "opcion5 opcion6";
+    grid-area: section4;
+    border: 1px solid #5f0f40;
+    height: 40rem;
+    text-align: center;
+    align-items: center;
+  }
+  @media screen and (max-width:400px){
+    .section4{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "opcion1"
+        "opcion2"
+        "opcion3"
+        "opcion4" 
+        "opcion5"
+        "opcion6";
+        align-items: center;
+        justify-content: center;
+        }
+    }
+    @media screen and (max-width:400px){
+      .section4{
+          height: 20rem;
+          align-items: center;
+          }
+      }
+  .opcion1 { grid-area: opcion1;
+  }
+  
+  .opcion2 { grid-area: opcion2; }
+  
+  .opcion3 { grid-area: opcion3; }
+  
+  .opcion4 { grid-area: opcion4; }
+  
+  .opcion5 { grid-area: opcion5; }
+  
+  .opcion6 { grid-area: opcion6; }
+  
+  .footer { grid-area: footer; }
+  
+
+  
+  
+  html, body , .container1 {
+    height: 100%;
+    margin: 0;
+  }
+  .container1 * {
+    position: relative;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*login*/
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 2.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav"
+      "login form1"
+      "footer footer";
+  }
+  @media screen and (max-width:400px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "nav"
+        "login"
+        "form1"
+        "footer";
+        align-items: center;
+        }
+    }
+  
+  .nav { grid-area: nav;
+
+    }
+.title{
+        text-align: start;
+        color: floralwhite;
+    }
+.nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+.nav ul a{
+        display:inline-block;
+        padding: 0.7rem;
+        text-decoration: none;
+    }
+.nav ul a:hover{
+        color: floralwhite;
+        font-weight: bold;
+    }
+  
+  .login { grid-area: login;
+    background-image: url(./fotos/Copiadeindoor_12.png);
+    background-size:contain;
+    text-align: center;
+}
+@media screen and (max-width:400px){
+  .login{
+      height: 20rem;
+      align-items: center;
+      }
+  }
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.riding{
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
+}
+  .form1 { grid-area: form1;
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%); 
+    text-align: center;
+    font-size: 1em;
+    margin-top:0;
+    padding: 20px;
+    line-height:3em;
+    font-size: 20px;
+}
+@media screen and (max-width:400px){
+  .form1{
+      height: 20rem;
+      align-items: center;
+      }
+  }
+h3{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+  .footer { grid-area: footer;
+}
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+
+  
+  
+  
+  
