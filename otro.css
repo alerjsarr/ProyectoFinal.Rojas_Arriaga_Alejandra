@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.navbar{
+    height: 5.5rem;
+}
+.nav-link{
+  color: rgb(55, 3, 85);
+}
+
+.containerl {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.4fr 1.4fr 1.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "section1 section1"
+      "section2 section3"
+      "section4 section5"
+      "footer footer";
+  }
+  @media screen and (max-width:400px){
+    .containerl{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "section1"
+      "section2"
+      "section3"
+      "section4"
+      "section5"
+      "footer";
+    }
+  }
+  
+.section1 { grid-area: section1;
+height: 50rem;
+margin: 10px;
+background-image: url(./fotos/primera_imagen2.0.jpeg);
+background-size: cover;
+}
+@media screen and (max-width:400px){
+  .section1{
+   background-position: 50%; 
+  }
+}
+.section2 { grid-area: section2;
+height: 40rem;
+margin: 10px;
+text-align:start;
+align-items: center;
+}
+.titlegalery{
+  font-size: 6rem;
+  font-weight: bold;
+  font-style: italic;
+}
+@media screen and (max-width:400px){
+  .section2{
+   height: 15rem;
+   justify-items: center;
+  }
+}
+@media screen and (max-width:400px){
+  .titlegalery{
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.section3 { grid-area: section3;
+height: 40rem;
+margin: 10px;
+background-image: url(./fotos/indoorgalery.jpeg);
+background-size: cover;
+}
+@media screen and (max-width:400px){
+  .section3{
+   height: 20rem;
+  }
+}
+.section4 { grid-area: section4;
+height: 70rem; 
+width: 45rem;
+margin: 10px;
+background-image: url(./fotos/indoor_8.png);
+background-size: cover;
+}
+@media screen and (max-width:400px){
+  .section4{
+   height: 20rem;
+  }
+}
+.section5 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "opcion1 opcion2"
+      "opcion3 opcion4"
+      "opcion5 opcion6";
+    grid-area: section5;
+    height: 70rem;
+    margin: 20px;
+  }
+  @media screen and (max-width:400px){
+    .section5{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "opcion1"
+      "opcion2"
+      "opcion3"
+      "opcion4"
+      "opcion5"
+      "opcion6";
+      height: 40rem;
+    }
+    
+  }
+  h1{
+    font-size: 5rem;
+  }
+  .opcion1 { grid-area: opcion1;
+  text-align: center;
+  border: 2px solid white; }
+  
+  .opcion2 { grid-area: opcion2;
+    text-align: center;
+    border: 2px solid white;}
+  
+  .opcion3 { grid-area: opcion3; 
+    text-align: center;
+    border: 2px solid white;}
+  
+  .opcion4 { grid-area: opcion4;
+    text-align: center; 
+    border: 2px solid white;}
+  
+  .opcion5 { grid-area: opcion5; 
+    text-align: center;
+    border: 2px solid white;}
+  
+  .opcion6 { grid-area: opcion6; 
+    text-align: center;
+    border: 2px solid white;}
+  
+.footer { grid-area: footer; 
+height: 10rem;}
+  
+  
+  html, body , .containerl {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* borrar al final */
+  
+  .containerl *:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* Botones index */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(66, 65, 65);
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 15rem;
+  height: 5rem;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+
+
+
+
+/*LOGIN*/
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.4fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "login form1"
+    "footer footer";
+    width: 100%;
+}
+@media screen and (max-width:400px){
+  .container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+      "login"
+      "form1"
+      "footer";
+      align-items: center;
+      }
+  }
+
+.login { grid-area: login;
+  background-image: url(./fotos/Copiadeindoor_12.png);
+  background-size:contain;
+  text-align: center;
+}
+@media screen and (max-width:400px){
+.login{
+    height: 40rem;
+    align-items: center;
+    }
+}
+.welcome{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.riding{
+  font-style: italic;
+  font-size: 2rem;
+  text-align: center;
+}
+.form1 { grid-area: form1;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%); 
+  text-align: center;
+  font-size: 1em;
+  margin-top:0;
+  padding: 20px;
+  line-height:3em;
+  font-size: 20px;
+}
+@media screen and (max-width:400px){
+.form1{
+    height: 40rem;
+    align-items: center;
+    font-size: 20px;
+    }
+  
+}
+h3{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer { grid-area: footer;
+}
+
+
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
