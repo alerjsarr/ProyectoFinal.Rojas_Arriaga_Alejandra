@@ -205,45 +205,48 @@ height: 10rem;}
 
 
 /*LOGIN*/
-.container {  display: grid;
+.mainlogin {  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2.4fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "login form1"
+    "login1 form1"
     "footer footer";
     width: 100%;
 }
 @media screen and (max-width:400px){
-  .container{
+  .mainlogin{
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
-      "login"
+      "login1"
       "form1"
       "footer";
       align-items: center;
+      height: 60rem;
       }
   }
 
-.login { grid-area: login;
+.login1 { grid-area: login1;
   background-image: url(./fotos/Copiadeindoor_12.png);
   background-size:contain;
   text-align: center;
+  height: 45rem;
 }
 @media screen and (max-width:400px){
-.login{
-    height: 40rem;
+.login1{
     align-items: center;
+    height: 20rem;
+    margin: none;
     }
 }
-.welcome{
+.login__title{
   font-size: 4rem;
   font-weight: bold;
   margin-top: 40px;
 }
-.riding{
+.login__title2{
   font-style: italic;
   font-size: 2rem;
   text-align: center;
@@ -255,18 +258,20 @@ height: 10rem;}
   font-size: 1em;
   margin-top:0;
   padding: 20px;
+  height: 45rem;
   line-height:3em;
   font-size: 20px;
 }
 @media screen and (max-width:400px){
 .form1{
-    height: 40rem;
+    height: 30rem;
     align-items: center;
     font-size: 20px;
+    margin-top: none;
     }
   
 }
-h3{
+.form1__title{
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
