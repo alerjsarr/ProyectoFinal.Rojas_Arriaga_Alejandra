@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -7,12 +8,15 @@ body {
   background-color: black;
   color: white; }
 
+/*BARRA DE NAVEGACIÓN*/
 .navbar {
   height: 5.5rem; }
 
 .nav-item {
-  color: #370355; }
+  color: #370355;
+  text-align: start; }
 
+/*INDEX*/
 .containerl {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -156,7 +160,7 @@ html, body, .containerl {
   align-items: center;
   justify-content: center; }
 
-/* Botones index */
+/* BOTONES INDEX */
 .button-54 {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -179,6 +183,84 @@ html, body, .containerl {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px; }
+
+/*RESERVAR CLASES*/
+.semanaeinstructores {
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  line-height: 1.3;
+  padding: 10px;
+  text-align: center; }
+
+.semanaeinstructores__semana {
+  font-size: 10px; }
+
+.dias {
+  list-style-type: none;
+  padding: 10px;
+  line-height: 1.3;
+  width: 100%; }
+
+li {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem; }
+
+.imagencalendario {
+  background-image: url(/fotos/reserva_calendario.png);
+  background-size: cover;
+  height: 20rem; }
+
+.seleccionlugares {
+  background-image: url(/fotos/lugares_indoor.png);
+  background-size: cover;
+  height: 40rem;
+  width: 1000px;
+  margin-left: 300px;
+  margin-right: 300px; }
+
+/*COMPRAR CLASES*/
+.imagenfondocompraclase {
+  background-image: url(./fotos/indoor_8.png); }
+
+.resumendecompra {
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  line-height: 1.3;
+  padding: 20px;
+  font-size: small;
+  text-align: justify; }
+
+.formulario {
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  text-align: center;
+  margin: 33rem;
+  margin-top: 0;
+  padding: 20px;
+  width: 600px;
+  height: 24rem;
+  line-height: 2em; }
+
+/*NOSOTROS*/
+.us {
+  text-align: left;
+  margin-left: 20px; }
+
+main {
+  display: inline-block; }
+
+.nosotros {
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  margin: 100px;
+  width: 40rem;
+  padding: 20px;
+  line-height: 2em;
+  border-radius: 5px; }
+
+.galeria {
+  text-align: right; }
 
 /*LOGIN*/
 .mainlogin {
@@ -245,6 +327,48 @@ html, body, .containerl {
   font-weight: bold;
   margin-bottom: 20px; }
 
+/*CREAR CUENTA*/
+.padre {
+  display: flex; }
+
+.padre div {
+  width: 50%;
+  padding: 12rem;
+  padding-bottom: 24rem;
+  flex-direction: row; }
+
+.welcomeregist {
+  background-image: url(./fotos/indoor_12.png);
+  background-size: cover;
+  text-align: start; }
+
+h1 {
+  font-weight: 400;
+  font-size: 4rem; }
+
+.takearide {
+  font-style: italic; }
+
+.registrate {
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  background-size: cover;
+  text-align: center;
+  font-size: medium;
+  border: 12rem;
+  margin-top: 0;
+  font-size: 1rem; }
+
+.regis {
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center; }
+
+@media (max-width: 400px) {
+  .padre {
+    flex-direction: column; } }
+
+/*FOOTER*/
 .footer {
   grid-area: footer; }
 
