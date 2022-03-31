@@ -1,2 +1,10 @@
-//TIPOGRAFIA 
-//COLORES
+//FORMATO BASE
+ 
+$bgcolor:black;
+$textcolor:white;
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $bgcolor;
+    color: $textcolor;
+  }
+

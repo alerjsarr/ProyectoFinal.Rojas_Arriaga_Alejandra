@@ -1,30 +1,14 @@
-$bgcolor:black;
-$textcolor:white;
-$optionborder:2px solid white;
-$fb: rgb(63, 63, 197);
-$insta: rgb(149, 49, 149);
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import "./partials/base";
 @import "./partials/abstracts";
 @import "./partials/components";
-
-*{
-    margin: 0;
-    padding: 0;
-  }
-  body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: $bgcolor;
-    color: $textcolor;
-  }
-
-/*BARRA DE NAVEGACIÓN*/
-  .navbar{
-      height: 5.5rem;
-  }
-  .nav-item{
-    color: rgb(55, 3, 85);
-    text-align: start;
-  }
+@import "./partials/layout";
 
 
 /*INDEX*/
@@ -124,10 +108,6 @@ $insta: rgb(149, 49, 149);
       grid-area: section5;
       height: 70rem;
       margin: 20px;
-      &:hover{
-        opacity: 1;
-        border: solid 5px white;
-    }
     }
     @media screen and (max-width:400px){
       .section5{
@@ -144,32 +124,6 @@ $insta: rgb(149, 49, 149);
       }
       
     }
-    h2{
-      font-size: 5rem;
-    }
-    .opcion1 { grid-area: opcion1;
-    text-align: center;
-    border: $optionborder;}
-    
-    .opcion2 { grid-area: opcion2;
-      text-align: center;
-      border: $optionborder;}
-    
-    .opcion3 { grid-area: opcion3; 
-      text-align: center;
-      border: $optionborder;}
-    
-    .opcion4 { grid-area: opcion4;
-      text-align: center; 
-      border: $optionborder;}
-    
-    .opcion5 { grid-area: opcion5; 
-      text-align: center;
-      border: $optionborder;}
-    
-    .opcion6 { grid-area: opcion6; 
-      text-align: center;
-      border: $optionborder;}
     
   .footer { grid-area: footer; 
   height: 10rem;}
@@ -193,7 +147,7 @@ $insta: rgb(149, 49, 149);
     }
 
 
-    
+
 /*RESERVAR CLASES*/
 .main__reservaclase{
   margin-top: 100px;

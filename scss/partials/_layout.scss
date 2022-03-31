@@ -1,2 +1,51 @@
-//LOGIN Y CREAR CUENTA 
+//LOGIN Y CREAR CUENTA FALTA
 
+//LAYOUT ESPECÍFICO DE OPCIONES
+
+.opcion1 { grid-area: opcion1;
+    text-align: center;
+    border: $optionborder;
+    &:hover{
+      opacity: 1;
+      border: solid 5px white;}
+    }
+    
+    .opcion2 { grid-area: opcion2;
+      text-align: center;
+      border: $optionborder;
+      &:hover{
+        opacity: 1;
+        border: solid 5px white;}
+    }
+    
+    .opcion3 { grid-area: opcion3; 
+      text-align: center;
+      border: $optionborder;
+      &:hover{
+        opacity: 1;
+        border: solid 5px white;}
+      }
+    
+    .opcion4 { grid-area: opcion4;
+      text-align: center; 
+      border: $optionborder;
+      &:hover{
+        opacity: 1;
+        border: solid 5px white;}
+    }
+    
+    .opcion5 { grid-area: opcion5; 
+      text-align: center;
+      border: $optionborder;
+      &:hover{
+        opacity: 1;
+        border: solid 5px white;}
+    }
+    
+    .opcion6 { grid-area: opcion6; 
+      text-align: center;
+      border: $optionborder;
+      &:hover{
+        opacity: 1;
+        border: solid 5px white;}
+    }

@@ -1,4 +1,12 @@
 //NAV
+.navbar{
+    height: 5.5rem;
+}
+.nav-item{
+    color: rgb(55, 3, 85);
+    text-align: start;
+}
+
 //BUTTONS
 .button-54 {
     font-family: "Open Sans", sans-serif;
@@ -34,6 +42,36 @@
     top: 5px;
     left: 5px;
   }
+
+
+//CARDS
+$optionborder:2px solid white;
+//MAP
+$l:rgb(181, 145, 179);
+$m: rgb(173, 98, 170);
+$s: rgb(98, 44, 145);
+
+$cards:(
+  l:rgb(181, 145, 179), 
+  m:rgb(173, 98, 170),
+  s:rgb(98, 44, 145),
+);
+
+$l:map-get($cards, l );
+$m:map-get($cards, m );
+$s:map-get($cards, s );
+
+h2{
+  font-size: 5rem;
+  color:$l;
+}
+h3{
+  color:$m;
+}
+h4{
+  color:$s;
+}
+
+
 //LINKS
 //LABELS
-//CARDS

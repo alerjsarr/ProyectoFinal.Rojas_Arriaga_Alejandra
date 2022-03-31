@@ -1,5 +1,8 @@
 //MIXINS
 
+$fb: rgb(63, 63, 197);
+$insta: rgb(149, 49, 149);
+
 @mixin redes($hover) {
     font-size: 60px;
     text-align: start;
@@ -10,3 +13,4 @@
       color: $hover;
     }   
 }
+
