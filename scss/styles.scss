@@ -339,7 +339,7 @@ li{
   @media screen and (max-width:400px){
   .login1{
       align-items: center;
-      height: 20rem;
+      height: 25rem;
       margin: none;
       }
   }
@@ -383,46 +383,78 @@ li{
 
 
 /*CREAR CUENTA*/
-.crearcuenta{
-  display: flex;
-  margin-top: 6rem;
+.maincrearcuenta {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.4fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "crearcuenta1 form2"
+    "footer footer";
+    width: 100%;
+    margin-top: 70px;
 }
-.crearcuenta__titles{
+@media screen and (max-width:400px){
+  .maincrearcuenta{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+      "crearcuenta1"
+      "form2"
+      "footer";
+      align-items: center;
+      height: 60rem;
+      }
+  }
+
+.crearcuenta1{ grid-area: crearcuenta1;
   background-image: url(/fotos/Copiadeindoor_12.png);
   background-size:cover;
-  text-align: start;
-  width: 50%;
-  padding: 12rem;
-  padding-bottom: 24rem;
-  flex-direction: row;
+  text-align: center;
+  height: 45rem;
 }
-.crearcuenta__titles_1{
-  font-weight: 400;
-  font-size: 4rem;
+@media screen and (max-width:400px){
+.crearcuenta1{
+    align-items: center;
+    height: 25rem;
+    margin: none;
+    }
 }
-.crearcuenta__titles_2{
+.crearcuenta1__title{
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.crearcuenta1__title2{
   font-style: italic;
-}
-.registrationform{
-  background-color: #310e68;
-  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%); 
-  background-size: cover;
-  text-align:center;
-  font-size: medium;
-  border: 12rem;
-  margin-top:0;
-  font-size: 1rem; 
-  width: 50%; 
-}
-.registrationform_title{
-  font-style: normal;
-  font-size: 3rem;
+  font-size: 3em;
   text-align: center;
 }
-@media (max-width:400px){
-  .crearcuenta{
-      flex-direction: column;  
-  }
+.form2{ grid-area: form2;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%); 
+  text-align: start;
+  font-size: 1em;
+  margin-top:0;
+  padding: 20px;
+  height: 45rem;
+  line-height:3em;
+  font-size: 20px;
+}
+@media screen and (max-width:400px){
+.form2{
+    height: 40rem;
+    align-items: center;
+    font-size: 15px;
+    margin-top: none;
+    }
+  
+}
+.form2__title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 

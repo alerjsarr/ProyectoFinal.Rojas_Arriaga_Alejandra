@@ -1,0 +1,387 @@
+/*RECUERDA HACER BACKUP CADA QUE TERMINES*/
+
+* {
+    margin: 0;
+    padding: 0; }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white; }
+  
+  /*BARRA DE NAVEGACIÓN*/
+  .navbar {
+    height: 5.5rem; }
+  
+  .nav-item {
+    color: #370355;
+    text-align: start; }
+  
+  /*INDEX*/
+  .containerl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.4fr 1.4fr 1.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "section1 section1" "section2 section3" "section4 section5" "footer footer";
+    width: 100%; }
+  
+  @media screen and (max-width: 400px) {
+    .containerl {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "section1" "section2" "section3" "section4" "section5" "footer"; } }
+  
+  .section1 {
+    grid-area: section1;
+    height: 50rem;
+    margin: 10px;
+    background-image: url(/fotos/primera_imagen2.0.jpeg);
+    background-size: cover; }
+  
+  @media screen and (max-width: 400px) {
+    .section1 {
+      background-position: 50%; } }
+  
+  .section2 {
+    grid-area: section2;
+    height: 40rem;
+    margin: 10px;
+    text-align: start;
+    align-items: center; }
+  
+  .titlegalery {
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: italic; }
+  
+  @media screen and (max-width: 400px) {
+    .section2 {
+      height: 15rem;
+      justify-items: center; } }
+  
+  @media screen and (max-width: 400px) {
+    .titlegalery {
+      font-size: 2rem;
+      text-align: center; } }
+  
+  .section3 {
+    grid-area: section3;
+    height: 40rem;
+    margin: 10px;
+    background-image: url(/fotos/indoorgalery.jpeg);
+    background-size: cover; }
+  
+  @media screen and (max-width: 400px) {
+    .section3 {
+      height: 20rem; } }
+  
+  .section4 {
+    grid-area: section4;
+    height: 70rem;
+    width: 45rem;
+    margin: 10px;
+    background-image: url(/fotos/indoor_8.png);
+    background-size: cover; }
+  
+  @media screen and (max-width: 400px) {
+    .section4 {
+      height: 20rem; } }
+  
+  .section5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "opcion1 opcion2" "opcion3 opcion4" "opcion5 opcion6";
+    grid-area: section5;
+    height: 70rem;
+    margin: 20px; }
+    .section5:hover {
+      opacity: 1;
+      border: solid 5px white; }
+  
+  @media screen and (max-width: 400px) {
+    .section5 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "opcion1" "opcion2" "opcion3" "opcion4" "opcion5" "opcion6";
+      height: 40rem; } }
+  
+  h2 {
+    font-size: 5rem; }
+  
+  .opcion1 {
+    grid-area: opcion1;
+    text-align: center;
+    border: 2px solid white; }
+  
+  .opcion2 {
+    grid-area: opcion2;
+    text-align: center;
+    border: 2px solid white; }
+  
+  .opcion3 {
+    grid-area: opcion3;
+    text-align: center;
+    border: 2px solid white; }
+  
+  .opcion4 {
+    grid-area: opcion4;
+    text-align: center;
+    border: 2px solid white; }
+  
+  .opcion5 {
+    grid-area: opcion5;
+    text-align: center;
+    border: 2px solid white; }
+  
+  .opcion6 {
+    grid-area: opcion6;
+    text-align: center;
+    border: 2px solid white; }
+  
+  .footer {
+    grid-area: footer;
+    height: 10rem; }
+  
+  html, body, .containerl {
+    height: 100%;
+    margin: 0; }
+  
+  /* borrar al final */
+  .containerl *:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center; }
+  
+  /* BOTONES INDEX */
+  .button-54 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #424141;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 15rem;
+    height: 5rem; }
+  
+  .button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px; }
+  
+  /*RESERVAR CLASES*/
+  .main__reservaclase {
+    margin-top: 100px; }
+  
+  .semanaeinstructores {
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+    line-height: 1.3;
+    padding: 10px;
+    text-align: center; }
+  
+  .semanaeinstructores__semana {
+    font-size: 1.3rem; }
+  
+  .dias {
+    list-style-type: none;
+    padding: 10px;
+    line-height: 1.3;
+    width: 100%; }
+  
+  li {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem; }
+  
+  .imagencalendario {
+    background-image: url(/fotos/reserva_calendario.png);
+    background-size: cover;
+    height: 20rem; }
+  
+  .seleccionlugares {
+    background-image: url(/fotos/lugares_indoor.png);
+    background-size: cover;
+    height: 40rem;
+    width: 1000px;
+    margin-left: 300px;
+    margin-right: 300px; }
+  
+  /*COMPRAR CLASES*/
+  .comprarclase__imagenfondo {
+    background-image: url(/fotos/indoor_8.png); }
+  
+  .resumendecompra__precio {
+    font-size: 2rem; }
+  
+  .resumendecompra {
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+    line-height: 1.3;
+    padding: 20px;
+    font-size: small;
+    text-align: justify; }
+  
+  .infodepago {
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+    text-align: center;
+    margin: 33rem;
+    margin-top: 0;
+    padding: 20px;
+    width: 600px;
+    height: 24rem;
+    line-height: 2em; }
+  
+  /*NOSOTROS*/
+  .nosotros__title {
+    text-align: left;
+    margin-left: 20px; }
+  
+  .nosotros {
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+    margin: 100px;
+    padding: 20px;
+    line-height: 2em;
+    border-radius: 5px; }
+  
+  .galeria {
+    text-align: center; }
+  
+  /*LOGIN*/
+  .mainlogin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "login1 form1" "footer footer";
+    width: 100%;
+    margin-top: 20px; }
+  
+  @media screen and (max-width: 400px) {
+    .mainlogin {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "login1" "form1" "footer";
+      align-items: center;
+      height: 60rem; } }
+  
+  .login1 {
+    grid-area: login1;
+    background-image: url(/fotos/Copiadeindoor_12.png);
+    background-size: cover;
+    text-align: center;
+    height: 45rem; }
+  
+  @media screen and (max-width: 400px) {
+    .login1 {
+      align-items: center;
+      height: 20rem;
+      margin: none; } }
+  
+  .login1__title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 40px; }
+  
+  .login1__title2 {
+    font-style: italic;
+    font-size: 3em;
+    text-align: center; }
+  
+  .form1 {
+    grid-area: form1;
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+    text-align: start;
+    font-size: 1em;
+    margin-top: 0;
+    padding: 20px;
+    height: 45rem;
+    line-height: 3em;
+    font-size: 20px; }
+  
+  @media screen and (max-width: 400px) {
+    .form1 {
+      height: 30rem;
+      align-items: center;
+      font-size: 20px;
+      margin-top: none; } }
+  
+  .form1__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  
+  /*CREAR CUENTA*/
+  .crearcuenta {
+    display: flex;
+    margin-top: 6rem; }
+  
+  .crearcuenta__titles {
+    background-image: url(/fotos/Copiadeindoor_12.png);
+    background-size: cover;
+    text-align: start;
+    width: 50%;
+    padding: 12rem;
+    padding-bottom: 24rem;
+    flex-direction: row; }
+  
+  .crearcuenta__titles_1 {
+    font-weight: 400;
+    font-size: 4rem; }
+  
+  .crearcuenta__titles_2 {
+    font-style: italic; }
+  
+  .registrationform {
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+    background-size: cover;
+    text-align: center;
+    font-size: medium;
+    border: 12rem;
+    margin-top: 0;
+    font-size: 1rem;
+    width: 50%; }
+  
+  .registrationform_title {
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center; }
+  
+  @media (max-width: 400px) {
+    .crearcuenta {
+      flex-direction: column; } }
+  
+  /*FOOTER*/
+  .footer {
+    grid-area: footer; }
+  
+  .footer__titulo {
+    font-size: 3rem; }
+  
+  html, body, .container {
+    height: 100%;
+    margin: 0; }
+  

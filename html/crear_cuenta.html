@@ -55,24 +55,38 @@
       </nav>
 
     <!--PRINCIPAL-->
-<main class="crearcuenta">
-    <div class="crearcuenta__titles">
-        <h1 class="crearcuenta__titles_1">Welcome to OUR Club!</h1> 
-        <h2 class="crearcuenta__titles_2">Let's take a ride.</h2>
+<div class="maincrearcuenta">
+  <div class="nav"></div>
+    <div class="crearcuenta1 animate__animated animate__fadeInLeft">
+        <h1 class="crearcuenta1__title">Welcome to OUR Club!</h1> 
+        <h2 class="crearcuenta1__title2">Let's take a ride.</h2>
     </div>
-    <!--inserta imagen de fondo-->
-    <div class="registrationform">
-        <h3 class="registrationform_title">Registrate</h3> <br>
-        <input type="text" placeholder="Nombre"> <br>
-        <input type="text" placeholder="Email"> <br>
-        <input type="password" placeholder="Contraseña"> <br>
-        <input type="checkbox" name="terminos">
-        <label for="terminos">Acepto Términos y Condiciones</label> <br>
-        <input type="checkbox" name="infoalcorreo">
-        <label for="infoalcorreo">Recibir información sobre promociones a mi correo</label><br>
-        <input type="submit" value="Crear mi cuenta">
-    </div>
-</main> 
+    <div class="form2 animate__animated animate__fadeInRight">
+        <h3 class="form2__title">Registrate</h3> 
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputName" class="form-label">Nombre y Apellido</label>
+            <input type="nombre" class="form-control" id="exampleInputName" aria-describedby="nombre y apellidos">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Acepto Terminos y Condiciones</label>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Quiero recibir información acerca de promociones a mi correo</label>
+          </div>
+          <button type="submit" class="btn btn-light">CREAR CUENTA</button>
+        </form>
+  </div>
 <div class="footer">
   <h5 class="footer__titulo">OUR RIDE</h5>
   <h5>📍Mapa y dirección</h5>
