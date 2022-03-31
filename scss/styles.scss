@@ -141,7 +141,7 @@ $optionborder:2px solid white;
       }
       
     }
-    h1{
+    h2{
       font-size: 5rem;
     }
     .opcion1 { grid-area: opcion1;
@@ -219,6 +219,9 @@ $optionborder:2px solid white;
 
 
 /*RESERVAR CLASES*/
+.main__reservaclase{
+  margin-top: 100px;
+}
 .semanaeinstructores{
   background-color: #310e68;
   background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
@@ -227,8 +230,7 @@ $optionborder:2px solid white;
   text-align: center;
 }
 .semanaeinstructores__semana{
-  font-size: 10px;
-
+  font-size: 1.3rem;
 }
 .dias{
   list-style-type: none;
@@ -260,6 +262,9 @@ li{
 .comprarclase__imagenfondo{
   background-image:url(/fotos/indoor_8.png);
 }
+.resumendecompra__precio{
+  font-size: 2rem;
+}
 .resumendecompra{
   background-color: #310e68;
   background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
@@ -286,9 +291,6 @@ li{
   text-align: left;
   margin-left: 20px;
 }
-main{
-  display: inline-block;
-}
 .nosotros{
   background-color: #310e68;
   background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
@@ -313,6 +315,7 @@ main{
       "login1 form1"
       "footer footer";
       width: 100%;
+      margin-top: 20px;
   }
   @media screen and (max-width:400px){
     .mainlogin{
@@ -340,20 +343,20 @@ main{
       margin: none;
       }
   }
-  .login__title{
-    font-size: 4rem;
+  .login1__title{
+    font-size: 5rem;
     font-weight: bold;
     margin-top: 40px;
   }
-  .login__title2{
+  .login1__title2{
     font-style: italic;
-    font-size: 2rem;
+    font-size: 3em;
     text-align: center;
   }
   .form1 { grid-area: form1;
     background-color: #310e68;
     background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%); 
-    text-align: center;
+    text-align: start;
     font-size: 1em;
     margin-top:0;
     padding: 20px;
@@ -371,6 +374,7 @@ main{
     
   }
   .form1__title{
+    text-align: center;
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -425,6 +429,9 @@ main{
 
 /*FOOTER*/
   .footer { grid-area: footer;
+  }
+  .footer__titulo{
+    font-size: 3rem;
   }
   
   
