@@ -1,6 +1,11 @@
 $bgcolor:black;
 $textcolor:white;
 $optionborder:2px solid white;
+$fb: rgb(63, 63, 197);
+$insta: rgb(149, 49, 149);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import "./partials/abstracts";
+@import "./partials/components";
 
 *{
     margin: 0;
@@ -11,8 +16,6 @@ $optionborder:2px solid white;
     background-color: $bgcolor;
     color: $textcolor;
   }
-
-
 
 /*BARRA DE NAVEGACIÓN*/
   .navbar{
@@ -190,34 +193,7 @@ $optionborder:2px solid white;
     }
 
 
-
-   /* BOTONES INDEX */
-  .button-54 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(66, 65, 65);
-    cursor: pointer;
-    border: 3px solid;
-    padding: 0.25em 0.5em;
-    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-    position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 15rem;
-    height: 5rem;
-  }
-  
-  .button-54:active {
-    box-shadow: 0px 0px 0px 0px;
-    top: 5px;
-    left: 5px;
-  }
-
-
+    
 /*RESERVAR CLASES*/
 .main__reservaclase{
   margin-top: 100px;
@@ -461,9 +437,17 @@ li{
 
 /*FOOTER*/
   .footer { grid-area: footer;
+    margin-top: 0px;
   }
   .footer__titulo{
     font-size: 3rem;
+    margin-left: 20px;
+  }
+  .bi-facebook{
+    @include redes ($fb)
+  }
+  .bi-instagram{
+    @include redes ($insta)
   }
   
   
