@@ -21,7 +21,8 @@ body {
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #424141;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
@@ -34,7 +35,7 @@ body {
   height: 5rem; }
 
 .button-galeria {
-  border-color: black; }
+  border-color: #d0c9c9; }
 
 .button-o {
   border-color: white;
@@ -48,13 +49,13 @@ body {
 
 h2 {
   font-size: 5rem;
-  color: #b591b3; }
+  color: white; }
 
 h3 {
   color: #ad62aa; }
 
 h4 {
-  color: #622c91; }
+  color: #444048; }
 
 .opcion1 {
   grid-area: opcion1;
@@ -118,23 +119,27 @@ h4 {
   .containerl {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "section1" "section2" "section3" "section4" "section5" "footer"; } }
+    grid-template-areas: "section1" "section2" "section3" "section4" "section5" "footer";
+    width: 100%;
+    align-items: center; } }
 
 .section1 {
   grid-area: section1;
   height: 50rem;
-  margin: 10px;
-  background-image: url(/fotos/primera_imagen2.0.jpeg);
-  background-size: cover; }
+  margin: 5px;
+  background-image: url(../fotos/primera_imagen2.0.jpeg);
+  background-size: cover;
+  background-position: 50%; }
 
 @media screen and (max-width: 400px) {
   .section1 {
-    background-position: 50%; } }
+    width: 100%; } }
 
 .section2 {
   grid-area: section2;
   height: 40rem;
   margin: 10px;
+  width: 70%;
   text-align: start;
   align-items: center; }
 
@@ -146,7 +151,8 @@ h4 {
 @media screen and (max-width: 400px) {
   .section2 {
     height: 15rem;
-    justify-items: center; } }
+    justify-items: center;
+    width: 100%; } }
 
 @media screen and (max-width: 400px) {
   .titlegalery {
@@ -156,13 +162,15 @@ h4 {
 .section3 {
   grid-area: section3;
   height: 40rem;
-  margin: 10px;
+  width: 100%;
+  margin-left: 70px;
   background-image: url(/fotos/indoorgalery.jpeg);
   background-size: cover; }
 
 @media screen and (max-width: 400px) {
   .section3 {
-    height: 20rem; } }
+    height: 20rem;
+    width: 100%; } }
 
 .section4 {
   grid-area: section4;
@@ -174,7 +182,8 @@ h4 {
 
 @media screen and (max-width: 400px) {
   .section4 {
-    height: 20rem; } }
+    height: 20rem;
+    width: 100%; } }
 
 .section5 {
   display: grid;
@@ -192,11 +201,8 @@ h4 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "opcion1" "opcion2" "opcion3" "opcion4" "opcion5" "opcion6";
-    height: 40rem; } }
-
-.footer {
-  grid-area: footer;
-  height: 10rem; }
+    height: 40rem;
+    width: 100%; } }
 
 html, body, .containerl {
   height: 100%;
@@ -214,51 +220,86 @@ html, body, .containerl {
   justify-content: center; }
 
 /*RESERVAR CLASES*/
-.main__reservaclase {
-  margin-top: 100px; }
+.mainreservarclase {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.5fr 1.7fr 1.7fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "reservarclase_seleccionador" "reservarclase_semana" "reservarclase_calendario" "reservarclase_selectordelugar" "footer"; }
 
-.semanaeinstructores {
+.reservarclase_seleccionador {
+  grid-area: reservarclase_seleccionador;
   background-color: #310e68;
   background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
   line-height: 1.3;
   padding: 10px;
-  text-align: center; }
-
-.semanaeinstructores__semana {
-  font-size: 1.3rem; }
-
-.dias {
-  list-style-type: none;
-  padding: 10px;
-  line-height: 1.3;
-  width: 100%; }
-
-li {
-  display: inline-block;
   text-align: center;
-  padding: 1rem; }
+  margin-top: 100px; }
 
-.imagencalendario {
+.reservarclase_semana {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "lunes martes miercoles jueves viernes sabado domingo";
+  grid-area: reservarclase_semana; }
+
+.lunes {
+  grid-area: lunes; }
+
+.martes {
+  grid-area: martes; }
+
+.miercoles {
+  grid-area: miercoles; }
+
+.jueves {
+  grid-area: jueves; }
+
+.viernes {
+  grid-area: viernes; }
+
+.sabado {
+  grid-area: sabado; }
+
+.domingo {
+  grid-area: domingo; }
+
+.reservarclase_calendario {
+  grid-area: reservarclase_calendario;
   background-image: url(/fotos/reserva_calendario.png);
   background-size: cover;
-  height: 20rem; }
+  height: 20rem;
+  margin-top: 10px; }
 
-.seleccionlugares {
-  background-image: url(/fotos/lugares_indoor.png);
-  background-size: cover;
-  height: 40rem;
-  width: 1000px;
-  margin-left: 300px;
-  margin-right: 300px; }
+.reservarclase_selectordelugar {
+  grid-area: reservarclase_selectordelugar;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  height: 30rem;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-right: 50px;
+  justify-content: center; }
+
+.footer {
+  grid-area: footer; }
 
 /*COMPRAR CLASES*/
-.comprarclase__imagenfondo {
-  background-image: url(/fotos/indoor_8.png); }
+.maincomprarclase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 0.9fr 1.8fr 1.5fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nav nav" "comprarclase_total comprarclase_total" "comprarclase_img comprarclase_form" "comprarclase_img comprarclase_form" "footer footer";
+  width: 100%; }
 
-.resumendecompra__precio {
-  font-size: 2rem; }
-
-.resumendecompra {
+.comprarclase_total {
+  grid-area: comprarclase_total;
   background-color: #310e68;
   background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
   line-height: 1.3;
@@ -266,33 +307,91 @@ li {
   font-size: small;
   text-align: justify; }
 
-.infodepago {
+.resumendecompra__precio {
+  font-size: 2rem; }
+
+.comprarclase_img {
+  grid-area: comprarclase_img;
+  background-image: url(../fotos/indoor_3.jpeg);
+  background-size: cover;
+  text-align: center;
+  height: 60rem; }
+
+.comprarclase_form {
+  grid-area: comprarclase_form;
   background-color: #310e68;
   background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
-  text-align: center;
-  margin: 33rem;
+  text-align: start;
+  font-size: 1em;
   margin-top: 0;
   padding: 20px;
-  width: 600px;
-  height: 24rem;
-  line-height: 2em; }
+  height: 60rem;
+  line-height: 3em;
+  font-size: 20px; }
+
+.footer {
+  grid-area: footer; }
+
+html, body, .maincomprarclase {
+  height: 100%;
+  margin: 0; }
 
 /*NOSOTROS*/
-.nosotros__title {
-  text-align: left;
-  margin-left: 20px; }
+.mainnosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1.7fr 1.7fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nosotros_title" "nosotros_story" "nosotros_galeria" "footer"; }
 
-.nosotros {
-  background-color: #310e68;
-  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
-  margin: 100px;
-  padding: 20px;
-  line-height: 2em;
-  border-radius: 5px; }
+.nosotros_title {
+  grid-area: nosotros_title;
+  height: 8rem;
+  margin-top: 7rem;
+  margin-left: 10px; }
 
-.galeria {
+.nosotros_title-1 {
+  font-size: 4rem;
+  justify-content: center;
   text-align: center; }
 
+.nosotros_story {
+  grid-area: nosotros_story;
+  height: 20rem;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  text-align: center; }
+
+.nosotros_story-title {
+  font-size: 2rem; }
+
+p {
+  margin-top: 10px; }
+
+.nosotros_galeria {
+  grid-area: nosotros_galeria;
+  height: 30rem;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 460px; }
+
+.carousel-inner {
+  margin-top: 20px;
+  justify-content: center;
+  height: 45rem; }
+
+.footer {
+  grid-area: footer; }
+
+html, body, .mainnosotros {
+  height: 100%;
+  margin: 0; }
+
+/* For presentation only, no need to copy the code below */
 /*LOGIN*/
 .mainlogin {
   display: grid;
@@ -430,15 +529,25 @@ li {
 /*FOOTER*/
 .footer {
   grid-area: footer;
-  margin-top: 0px; }
+  margin-top: 10px;
+  height: 3rem; }
 
 .footer__titulo {
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin-left: 20px; }
+
+h6 {
+  margin-left: 20px; }
+
+.map {
+  display: inline-block;
+  justify-content: flex-end;
+  justify-items: flex-end;
+  margin-left: 100px; }
 
 .bi-facebook {
   font-size: 60px;
-  text-align: start;
+  text-align: end;
   margin-left: 30px;
   margin-right: 10px;
   color: white; }
@@ -447,7 +556,7 @@ li {
 
 .bi-instagram {
   font-size: 60px;
-  text-align: start;
+  text-align: end;
   margin-left: 30px;
   margin-right: 10px;
   color: white; }

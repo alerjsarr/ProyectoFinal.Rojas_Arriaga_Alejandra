@@ -53,34 +53,39 @@
           </div>
         </div>
       </nav>
-<!--principal-->
 <br>
 <br>
 <br>
-<main class="comprarclase__imagenfondo">
-    <section class="resumendecompra">
-        <h1>1. Resumen de compra</h1>
-        <h2 class="resumendecompra__precio">Total a pagar: 1,400 MXN</h2>
-<!--Inserta imagen-->
-    </section>
-    <section class="infodepago">
-        <form>
-            <label for="codigoprom">2. Tienes un código promocional?</label> <br>
-            <input type="text" placeholder="CÓDIGO PROMOCIONAL"> <br>
-            <label for="informaciondepago">3. Información de pago</label> <br>
-            <input type="text" placeholder="Nombre como aparece en la tarjeta"><br>
-            <input type="text" placeholder="Número de tarjeta (16 dígitos)"><br>
-            <input type="text" placeholder="CVC"><br>
-            <input type="text" placeholder="Mes (MM)"> <br>
-            <input type="text" placeholder="Año (AAAA)"><br>
-           <input type="checkbox" name="Términos">
-           <label for="terminos">Acepto Términos y Condiciones y las Políticas de Cancelación</label><br>
-           <input type="submit" value="PAGAR AHORA">
-           <hr>
-          <h3>Si lo prefieres, puedes pagar con:</h3>
+<div class="maincomprarclase">
+  <div class="nav"></div>
+  <div class="comprarclase_total">
+    <h1>1. Resumen de compra</h1>
+    <h2 class="resumendecompra__precio">Total a pagar: 1,400 MXN</h2>
+  </div>
+  <div class="comprarclase_img"></div>
+  <div class="comprarclase_form">
+    <form>
+      <div class="form-group">
+        <label for="codigopromocional">2. Tienes un código promocional? </label>
+        <input type="text" class="form-control form-control-lg" id="codigopromocional" aria-describedby="insertarcodigopromocional" placeholder="CODIGO PROMOCIONAL">
+      </div>
+      <div class="form-group">
+        <label for="informaciondepago">3. Información de pago</label>
+        <input type="text" class="form-control form-control-lg" id="nombreenlatarjeta" placeholder="Nombre como aparece en la tarjeta">
+        <input type="text" class="form-control form-control-lg" id="numerodetarjeta" placeholder="Número de tarjeta (16 dígitos)">
+        <input type="text" class="form-control form-control-lg" id="cvc" placeholder="CVC">
+        <input type="text" class="form-control form-control-lg" id="Mes" placeholder="Mes (MM)">
+        <input type="text" class="form-control form-control-lg" id="año" placeholder="Año (AAAA)">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Acepto Términos y Condiciones y las Políticas de Cancelación</label>
+      </div>
+      <button type="submit" class="btn btn-light">PAGAR AHORA</button>
+    </form>
+    <h3 class="opcionesdepago">Si lo prefieres, puedes pagar con:</h3>
 </form>
-</section>
-</main>
+  </div>  
 <div class="footer">
   <h5 class="footer__titulo">OUR RIDE</h5>
   <i class="bi bi-facebook"></i>
