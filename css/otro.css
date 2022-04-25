@@ -115,14 +115,6 @@ h4 {
   grid-template-areas: "section1 section1" "section2 section3" "section4 section5" "footer footer";
   width: 100%; }
 
-@media screen and (max-width: 400px) {
-  .containerl {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "section1" "section2" "section3" "section4" "section5" "footer";
-    width: 100%;
-    align-items: center; } }
-
 .section1 {
   grid-area: section1;
   height: 50rem;
@@ -130,10 +122,6 @@ h4 {
   background-image: url(../fotos/primera_imagen2.0.jpeg);
   background-size: cover;
   background-position: 50%; }
-
-@media screen and (max-width: 400px) {
-  .section1 {
-    width: 100%; } }
 
 .section2 {
   grid-area: section2;
@@ -148,17 +136,6 @@ h4 {
   font-weight: bold;
   font-style: italic; }
 
-@media screen and (max-width: 400px) {
-  .section2 {
-    height: 15rem;
-    justify-items: center;
-    width: 100%; } }
-
-@media screen and (max-width: 400px) {
-  .titlegalery {
-    font-size: 2rem;
-    text-align: center; } }
-
 .section3 {
   grid-area: section3;
   height: 40rem;
@@ -167,11 +144,6 @@ h4 {
   background-image: url(/fotos/indoorgalery.jpeg);
   background-size: cover; }
 
-@media screen and (max-width: 400px) {
-  .section3 {
-    height: 20rem;
-    width: 100%; } }
-
 .section4 {
   grid-area: section4;
   height: 70rem;
@@ -179,11 +151,6 @@ h4 {
   margin: 10px;
   background-image: url(/fotos/indoor_8.png);
   background-size: cover; }
-
-@media screen and (max-width: 400px) {
-  .section4 {
-    height: 20rem;
-    width: 100%; } }
 
 .section5 {
   display: grid;
@@ -195,14 +162,6 @@ h4 {
   grid-area: section5;
   height: 70rem;
   margin: 20px; }
-
-@media screen and (max-width: 400px) {
-  .section5 {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "opcion1" "opcion2" "opcion3" "opcion4" "opcion5" "opcion6";
-    height: 40rem;
-    width: 100%; } }
 
 html, body, .containerl {
   height: 100%;
@@ -391,7 +350,6 @@ html, body, .mainnosotros {
   height: 100%;
   margin: 0; }
 
-/* For presentation only, no need to copy the code below */
 /*LOGIN*/
 .mainlogin {
   display: grid;
@@ -403,26 +361,12 @@ html, body, .mainnosotros {
   width: 100%;
   margin-top: 20px; }
 
-@media screen and (max-width: 400px) {
-  .mainlogin {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "login1" "form1" "footer";
-    align-items: center;
-    height: 60rem; } }
-
 .login1 {
   grid-area: login1;
   background-image: url(/fotos/Copiadeindoor_12.png);
   background-size: cover;
   text-align: center;
   height: 45rem; }
-
-@media screen and (max-width: 400px) {
-  .login1 {
-    align-items: center;
-    height: 25rem;
-    margin: none; } }
 
 .login1__title {
   font-size: 5rem;
@@ -446,13 +390,6 @@ html, body, .mainnosotros {
   line-height: 3em;
   font-size: 20px; }
 
-@media screen and (max-width: 400px) {
-  .form1 {
-    height: 30rem;
-    align-items: center;
-    font-size: 20px;
-    margin-top: none; } }
-
 .form1__title {
   text-align: center;
   font-size: 3rem;
@@ -470,26 +407,12 @@ html, body, .mainnosotros {
   width: 100%;
   margin-top: 70px; }
 
-@media screen and (max-width: 400px) {
-  .maincrearcuenta {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "crearcuenta1" "form2" "footer";
-    align-items: center;
-    height: 60rem; } }
-
 .crearcuenta1 {
   grid-area: crearcuenta1;
   background-image: url(/fotos/Copiadeindoor_12.png);
   background-size: cover;
   text-align: center;
   height: 45rem; }
-
-@media screen and (max-width: 400px) {
-  .crearcuenta1 {
-    align-items: center;
-    height: 25rem;
-    margin: none; } }
 
 .crearcuenta1__title {
   font-size: 5rem;
@@ -512,13 +435,6 @@ html, body, .mainnosotros {
   height: 45rem;
   line-height: 3em;
   font-size: 20px; }
-
-@media screen and (max-width: 400px) {
-  .form2 {
-    height: 40rem;
-    align-items: center;
-    font-size: 15px;
-    margin-top: none; } }
 
 .form2__title {
   text-align: center;
@@ -566,3 +482,86 @@ h6 {
 html, body, .container {
   height: 100%;
   margin: 0; }
+
+@media screen and (max-width: 400px) {
+  .containerl {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "section1" "section2" "section3" "section4" "section5" "footer";
+    width: 100%;
+    align-items: center; } }
+
+@media screen and (max-width: 400px) {
+  .section1 {
+    width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .section2 {
+    height: 15rem;
+    justify-items: center;
+    width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .titlegalery {
+    font-size: 2rem;
+    text-align: center; } }
+
+@media screen and (max-width: 400px) {
+  .section3 {
+    height: 20rem;
+    width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .section4 {
+    height: 20rem;
+    width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .section5 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "opcion1" "opcion2" "opcion3" "opcion4" "opcion5" "opcion6";
+    height: 40rem;
+    width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .maincrearcuenta {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "crearcuenta1" "form2" "footer";
+    align-items: center;
+    height: 60rem; } }
+
+@media screen and (max-width: 400px) {
+  .crearcuenta1 {
+    align-items: center;
+    height: 25rem;
+    margin: none; } }
+
+@media screen and (max-width: 400px) {
+  .form2 {
+    height: 40rem;
+    align-items: center;
+    font-size: 15px;
+    margin-top: none; } }
+
+@media screen and (max-width: 400px) {
+  .mainlogin {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "login1" "form1" "footer";
+    align-items: center;
+    height: 60rem; } }
+
+@media screen and (max-width: 400px) {
+  .login1 {
+    align-items: center;
+    height: 25rem;
+    margin: none; } }
+
+@media screen and (max-width: 400px) {
+  .form1 {
+    height: 30rem;
+    align-items: center;
+    font-size: 20px;
+    margin-top: none; } }
