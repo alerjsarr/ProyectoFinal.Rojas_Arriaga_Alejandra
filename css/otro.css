@@ -105,11 +105,14 @@ h4 {
     opacity: 1;
     border: solid 5px white; }
 
+.nav {
+  width: 100%; }
+
 /*INDEX*/
 .containerl {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1.4fr 1.4fr 1.4fr 0.4fr;
+  grid-template-rows: 0.7fr 1.5fr 1.5fr 0.5;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "section1 section1" "section2 section3" "section4 section5" "footer footer";
@@ -117,18 +120,21 @@ h4 {
 
 .section1 {
   grid-area: section1;
-  height: 50rem;
-  margin: 5px;
-  background-image: url(../fotos/primera_imagen2.0.jpeg);
-  background-size: cover;
-  background-position: 50%; }
+  height: 45rem;
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%); }
+
+.section1_img {
+  width: 70rem;
+  height: 30rem;
+  margin-top: 88px;
+  margin-left: 80px; }
 
 .section2 {
   grid-area: section2;
   height: 40rem;
-  margin: 10px;
   width: 70%;
-  text-align: start;
+  text-align: center;
   align-items: center; }
 
 .titlegalery {
@@ -140,8 +146,7 @@ h4 {
   grid-area: section3;
   height: 40rem;
   width: 100%;
-  margin-left: 70px;
-  background-image: url(/fotos/indoorgalery.jpeg);
+  background-image: url(../fotos/index_img2.0.1.png);
   background-size: cover; }
 
 .section4 {
@@ -152,6 +157,21 @@ h4 {
   background-image: url(/fotos/indoor_8.png);
   background-size: cover; }
 
+.section4_title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.481); }
+
+.section4_title2 {
+  font-style: italic;
+  font-size: 3em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.481); }
+
 .section5 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -160,29 +180,13 @@ h4 {
   grid-auto-flow: row;
   grid-template-areas: "opcion1 opcion2" "opcion3 opcion4" "opcion5 opcion6";
   grid-area: section5;
-  height: 70rem;
-  margin: 20px; }
-
-html, body, .containerl {
-  height: 100%;
-  margin: 0; }
-
-/* borrar al final */
-.containerl *:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  align-items: center;
-  justify-content: center; }
+  height: 70rem; }
 
 /*RESERVAR CLASES*/
 .mainreservarclase {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.7fr 0.5fr 1.7fr 1.7fr 0.4fr;
+  grid-template-rows: 0.7fr 0.2fr 1.5fr 1.7fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "reservarclase_seleccionador" "reservarclase_semana" "reservarclase_calendario" "reservarclase_selectordelugar" "footer"; }
@@ -198,12 +202,14 @@ html, body, .containerl {
 
 .reservarclase_semana {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "lunes martes miercoles jueves viernes sabado domingo";
-  grid-area: reservarclase_semana; }
+  grid-area: reservarclase_semana;
+  align-items: center;
+  text-align: center; }
 
 .lunes {
   grid-area: lunes; }
@@ -230,7 +236,7 @@ html, body, .containerl {
   grid-area: reservarclase_calendario;
   background-image: url(/fotos/reserva_calendario.png);
   background-size: cover;
-  height: 20rem;
+  height: 25rem;
   margin-top: 10px; }
 
 .reservarclase_selectordelugar {
@@ -244,6 +250,11 @@ html, body, .containerl {
   margin-right: 50px;
   justify-content: center; }
 
+.selectordelugar_imagenprevista {
+  height: 30rem;
+  width: 50rem;
+  margin-left: 250px; }
+
 .footer {
   grid-area: footer; }
 
@@ -251,10 +262,10 @@ html, body, .containerl {
 .maincomprarclase {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.4fr 0.9fr 1.8fr 1.5fr 0.4fr;
+  grid-template-rows: 0.4fr 1.8fr 1.5fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "nav nav" "comprarclase_total comprarclase_total" "comprarclase_img comprarclase_form" "comprarclase_img comprarclase_form" "footer footer";
+  grid-template-areas: "comprarclase_total comprarclase_total" "comprarclase_img comprarclase_form" "comprarclase_img comprarclase_form" "footer footer";
   width: 100%; }
 
 .comprarclase_total {
@@ -264,14 +275,15 @@ html, body, .containerl {
   line-height: 1.3;
   padding: 20px;
   font-size: small;
-  text-align: justify; }
+  text-align: justify;
+  height: 10rem; }
 
 .resumendecompra__precio {
   font-size: 2rem; }
 
 .comprarclase_img {
   grid-area: comprarclase_img;
-  background-image: url(../fotos/indoor_3.jpeg);
+  background-image: url(../fotos/compraclaseimg.png);
   background-size: cover;
   text-align: center;
   height: 60rem; }
@@ -288,18 +300,22 @@ html, body, .containerl {
   line-height: 3em;
   font-size: 20px; }
 
+.form-check-label {
+  font-size: small;
+  align-items: center; }
+
+.paypal {
+  width: 7rem;
+  height: 7rem; }
+
 .footer {
   grid-area: footer; }
-
-html, body, .maincomprarclase {
-  height: 100%;
-  margin: 0; }
 
 /*NOSOTROS*/
 .mainnosotros {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1.7fr 1.7fr 0.4fr;
+  grid-template-rows: 0.5fr 1fr 1.7fr 0.3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "nosotros_title" "nosotros_story" "nosotros_galeria" "footer"; }
@@ -334,6 +350,9 @@ p {
   margin-left: 50px;
   margin-right: 50px; }
 
+.carousel {
+  height: 30rem; }
+
 .carousel-inner img {
   width: 100%;
   max-height: 460px; }
@@ -345,10 +364,6 @@ p {
 
 .footer {
   grid-area: footer; }
-
-html, body, .mainnosotros {
-  height: 100%;
-  margin: 0; }
 
 /*LOGIN*/
 .mainlogin {
@@ -479,52 +494,68 @@ h6 {
   .bi-instagram:hover {
     color: #953195; }
 
-html, body, .container {
-  height: 100%;
-  margin: 0; }
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .containerl {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr 0.5fr 1fr 1fr 3.5fr 2fr;
     grid-template-areas: "section1" "section2" "section3" "section4" "section5" "footer";
     width: 100%;
     align-items: center; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .section1 {
-    width: 100%; } }
+    width: 100%;
+    height: 20rem; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
+  .section1_img {
+    width: 30rem;
+    height: 12rem;
+    margin-top: 88px;
+    margin-left: 60px; } }
+
+@media screen and (max-width: 425px) {
   .section2 {
     height: 15rem;
     justify-items: center;
     width: 100%; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .titlegalery {
     font-size: 2rem;
     text-align: center; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .section3 {
     height: 20rem;
     width: 100%; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .section4 {
     height: 20rem;
     width: 100%; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .section5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "opcion1" "opcion2" "opcion3" "opcion4" "opcion5" "opcion6";
     height: 40rem;
-    width: 100%; } }
+    width: 100%;
+    margin-top: 0%; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
+  .maincomprarclase {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "comprarclase_total" "comprarclase_img" "comprarclase_form" "footer";
+    height: 100vw; } }
+
+@media screen and (max-width: 425px) {
+  .comprarclase_img {
+    height: 37rem; } }
+
+@media screen and (max-width: 425px) {
   .maincrearcuenta {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -532,20 +563,20 @@ html, body, .container {
     align-items: center;
     height: 60rem; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .crearcuenta1 {
     align-items: center;
     height: 25rem;
     margin: none; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .form2 {
     height: 40rem;
     align-items: center;
     font-size: 15px;
     margin-top: none; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .mainlogin {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -553,15 +584,37 @@ html, body, .container {
     align-items: center;
     height: 60rem; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .login1 {
     align-items: center;
     height: 25rem;
     margin: none; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .form1 {
     height: 30rem;
     align-items: center;
     font-size: 20px;
     margin-top: none; } }
+
+@media screen and (max-width: 425px) {
+  .mainnosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.5fr 0.3fr;
+    grid-template-areas: "nosotros_title" "nosotros_story" "nosotros_galeria" "footer"; } }
+
+@media screen and (max-width: 425px) {
+  .nosotros_story {
+    height: 40rem; } }
+
+@media screen and (max-width: 425px) {
+  .nosotros_galeria {
+    height: 20rem; } }
+
+@media screen and (max-width: 425px) {
+  .carousel {
+    height: 20rem; } }
+
+@media screen and (max-width: 425px) {
+  .carousel-inner {
+    height: 20rem; } }
