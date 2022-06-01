@@ -2,14 +2,16 @@
 
 const precio = 185
 let cantidadClases = Number(prompt('Escribe el número de clases que deseas adquirir'))
+function preciototal(precioFinal){
+    alert('Tu total es de: $' + precioFinal + 'MXN')
+}
+preciototal (precio * cantidadClases)
+
 
 if (cantidadClases >50){
     alert('Maximo posible de compra: 50 clases por usuario')
 }else{
-    function preciototal(precioFinal){
-        alert('Tu total es de: $' + precioFinal + 'MXN')
-    }
-    preciototal (precio * cantidadClases)
+    preciototal()
 }
 
 //NECESITO MUCHOS IF PARA ESAS CONDICIONES? 
@@ -32,7 +34,6 @@ switch (cantidadClases){
         break
 
 }
-
 
 
 
