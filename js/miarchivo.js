@@ -1,67 +1,77 @@
-//Algoritmo condicional y algoritmo con ciclo para calcular costo total de productos seleccionados por el usuario
+//Carrito 
 
-/*const precio = 185
+class PaquetesdeClases{
+    constructor (cantidad, precio, moneda){
+        this.cantidad = cantidad
+        this.precio = precio
+        this.moneda = moneda
+    }   
+}  
 
-let cantidadClases = Number(prompt('Escribe el número de clases que deseas adquirir'))
+//const precioPorClase = 185
+const opcion1= new PaquetesdeClases('5', 850,'MXN')
+const opcion2= new PaquetesdeClases('10', 1400, 'MXN')
+const opcion3= new PaquetesdeClases('15', 1950, 'MXN')
+const opcion4= new PaquetesdeClases('25', 3150, 'MXN')
+const opcion5= new PaquetesdeClases('50', 5500, 'MXN')
 
-function preciototal(precioFinal){
-    alert('Tu total es de: $' + precioFinal + 'MXN')
+const precioClaseIndividual = 185
+
+const carritodecompra = []
+
+const mensaje = (opcion) => {
+    alert('El total del de ' + opcion.cantidad + ' clases' + 'es de $' +opcion.precio + opcion.moneda );
 }
-preciototal (precio * cantidadClases)
 
-
-if (cantidadClases >50){
-    alert('Maximo posible de compra: 50 clases por usuario')
-}else{
-    preciototal()
+const totalCarritodecompra = () => {
+    let sumaTotal = 0
+    carritodecompra.forEach((clase) => {
+        sumaTotal += clase.precio
+    })
+    return sumaTotal
 }
 
-//NECESITO MUCHOS IF PARA ESAS CONDICIONES? 
-
-switch (cantidadClases){
-    case 5:
-        alert('Tu total es de: $850 MXN')
-        break
-    case 10:
-        alert('Tu total es de: $1,400 MXN')
-        break
-    case 15:
-        alert('Tu total es de: $1,950 MXN')
-        break
-    case 25:
-        alert('Tu total es de: $3,150 MXN')
-        break
-    case 50:
-        alert('Tu total es de: $5,500 MXN')
-        break
-
-}*/
-
-//Arrays
-const clases5 = { 
-    promo: 'Opción 1', 
-    precio:'$850 MXN'}
-const clases10 = {
-    promo: 'Opción 2', 
-    precio:'$1,400 MXN'}
-const clases15 = {
-    promo: 'Opción 3', 
-    precio:'$1,950 MXN'}
-const clases25 = {
-    promo: 'Opción 4', 
-    precio:'$3,150 MXN'}
-const clases50 = {
-    promo: 'Opción 5', 
-    precio:'$5,500 MXN'}
-
-const clasesPromo = [clases5,clases10,clases15,clases25,clases50]
-
-console.log(clasesPromo);
-
-for (const clasePromo of clasesPromo){
-console.log(clasePromo.promo);
-console.log(clasePromo.precio);
+const agregarClases = () => {
+    const paqueteElegido = prompt ('Elige el número de clases que deseas:')
+    
+    switch (paqueteElegido){
+        case '5':
+            mensaje(opcion1)
+            carritodecompra.push(opcion1)
+            break
+        case '10':
+            mensaje(opcion2)
+            carritodecompra.push(opcion2)
+            break
+        case '15':
+            mensaje(opcion3)
+            carritodecompra.push(opcion3)
+            break
+        case '25':
+            mensaje(opcion4)
+            carritodecompra.push(opcion4)
+            break
+         case '50':
+            mensaje(opcion5)
+            carritodecompra.push(opcion5)
+            break
+            //FUNCION PARA EL DEFAULT?
+         default:
+            (precioPorClase * paqueteElegido)
+        
 }
+
+if (paqueteElegido >50){
+    alert('Maximo posible de compra: 50 clases por usuario')}
+if (confirm('Deseas agregar mas clases?')){
+    agregarClases()
+} else{
+    alert('Finalizar compra. Su total es de $' + totalCarritodecompra());
+
+}
+}
+
+agregarClases()
 
 
 
