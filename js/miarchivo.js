@@ -75,13 +75,13 @@ agregarClases()
 
 */
 
-//DOM Y EN PÁGINA: CREAR CUENTA
+//DOM Y EVENTOS EN PÁGINA: CREAR CUENTA
 //FUNCIONES
 const enviarForm = (e) => {
     e.preventDefault()
     const nombreApellido = e.target[0].value
     const correoE = e.target[1].value 
-    
+
 //Si quitamos el required de los id 
     if (!nombreApellido || !correoE){
         console.log('Ingresa los datos correspodientes');
