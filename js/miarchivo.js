@@ -55,14 +55,19 @@ const agregarClases = () => {
             mensaje(opcion5)
             carritodecompra.push(opcion5)
             break
-//AGREGA FUNCION QUE TE PASO MATI! 
-         default:
-            (precioPorClase * paqueteElegido)
+        default:
+            (() => { alert (`El costo de las clases individuales seleccionadas es de $${ (precioClaseIndividual* paqueteElegido)}`)})()
+            carritodecompra.push({ cantidad: paqueteElegido, precio: (precioClaseIndividual* paqueteElegido), moneda:'MXN'})
+             break;
         
 }
 
 if (paqueteElegido >50){
-    alert('Maximo posible de compra: 50 clases por usuario')}
+    alert('Maximo posible de compra: 50 clases por usuario')} 
+    
+//ME SIGUE ARROJANDO EL COSTO DE MAS DE 50 CLASES, COMO DEJO DE EJECUTAR SI PONEN >50? 
+
+
 if (confirm('Deseas agregar mas clases?')){
     agregarClases()
 } else{
@@ -72,8 +77,8 @@ if (confirm('Deseas agregar mas clases?')){
 }
 
 agregarClases()
-
 */
+
 
 //DOM Y EVENTOS EN PÁGINA: CREAR CUENTA
 //FUNCIONES
