@@ -1,5 +1,5 @@
-//Carrito 
-
+//CARRITO EN PÁGINA: COMPRAR CLASES
+/*
 class PaquetesdeClases{
     constructor (cantidad, precio, moneda){
         this.cantidad = cantidad
@@ -55,7 +55,7 @@ const agregarClases = () => {
             mensaje(opcion5)
             carritodecompra.push(opcion5)
             break
-            //FUNCION PARA EL DEFAULT?
+//AGREGA FUNCION QUE TE PASO MATI! 
          default:
             (precioPorClase * paqueteElegido)
         
@@ -73,6 +73,24 @@ if (confirm('Deseas agregar mas clases?')){
 
 agregarClases()
 
+*/
 
+//DOM Y EN PÁGINA: CREAR CUENTA
+//FUNCIONES
+const enviarForm = (e) => {
+    e.preventDefault()
+    const nombreApellido = e.target[0].value
+    const correoE = e.target[1].value 
+    
+//Si quitamos el required de los id 
+    if (!nombreApellido || !correoE){
+        console.log('Ingresa los datos correspodientes');
+        return
+    }
+    console.log('Datos de Usuario: ')
+    console.log(nombreApellido,correoE)
+}
 
-
+const form = document.querySelector('#formulariocrearcuenta')
+console.log(form)
+form.addEventListener ('submit', enviarForm)
