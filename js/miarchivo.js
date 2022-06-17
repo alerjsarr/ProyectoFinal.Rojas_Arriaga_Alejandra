@@ -99,3 +99,8 @@ const enviarForm = (e) => {
 const form = document.querySelector('#formulariocrearcuenta')
 console.log(form)
 form.addEventListener ('submit', enviarForm)
+
+//LOCAL STORAGE 
+localStorage.setItem('usuario', 'Nombre y Apelido')
+const usuario = localStorage.getItem ('usuario')
+console.log(usuario);
