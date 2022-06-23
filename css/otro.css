@@ -3,11 +3,6 @@
   margin: 0;
   padding: 0; }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: black;
-  color: white; }
-
 .navbar {
   height: 5.5rem; }
 
@@ -19,10 +14,9 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
-  text-decoration: none;
+  text-decoration-color: white;
   text-transform: uppercase;
-  background-color: #310e68;
-  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+  background-color: black;
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
@@ -35,11 +29,12 @@ body {
   height: 5rem; }
 
 .button-galeria {
-  border-color: #d0c9c9; }
+  border-color: #d0c9c9;
+  color: white; }
 
 .button-o {
   border-color: white;
-  background-color: #1a1919;
+  background-color: black;
   color: white; }
 
 .button-54:active, .button-galeria:active, .button-o:active {
@@ -57,53 +52,75 @@ h3 {
 h4 {
   color: #444048; }
 
-.opcion1 {
-  grid-area: opcion1;
-  text-align: center;
-  border: 2px solid white; }
-  .opcion1:hover {
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  color: white; }
+
+.card {
+  background-color: black;
+  border: 2px solid white;
+  text-align: center; }
+  .card:hover {
     opacity: 1;
     border: solid 5px white; }
 
-.opcion2 {
-  grid-area: opcion2;
-  text-align: center;
-  border: 2px solid white; }
-  .opcion2:hover {
+.card_1 {
+  background-color: black;
+  border: 2px solid white;
+  text-align: center; }
+  .card_1:hover {
     opacity: 1;
     border: solid 5px white; }
 
-.opcion3 {
-  grid-area: opcion3;
-  text-align: center;
-  border: 2px solid white; }
-  .opcion3:hover {
-    opacity: 1;
-    border: solid 5px white; }
+.navbar {
+  height: 5.5rem; }
 
-.opcion4 {
-  grid-area: opcion4;
-  text-align: center;
-  border: 2px solid white; }
-  .opcion4:hover {
-    opacity: 1;
-    border: solid 5px white; }
+.nav-item {
+  color: #370355;
+  text-align: start; }
 
-.opcion5 {
-  grid-area: opcion5;
-  text-align: center;
-  border: 2px solid white; }
-  .opcion5:hover {
-    opacity: 1;
-    border: solid 5px white; }
+.button-54, .button-galeria, .button-o {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration-color: white;
+  text-transform: uppercase;
+  background-color: black;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 15rem;
+  height: 5rem; }
 
-.opcion6 {
-  grid-area: opcion6;
-  text-align: center;
-  border: 2px solid white; }
-  .opcion6:hover {
-    opacity: 1;
-    border: solid 5px white; }
+.button-galeria {
+  border-color: #d0c9c9;
+  color: white; }
+
+.button-o {
+  border-color: white;
+  background-color: black;
+  color: white; }
+
+.button-54:active, .button-galeria:active, .button-o:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px; }
+
+h2 {
+  font-size: 5rem;
+  color: white; }
+
+h3 {
+  color: #ad62aa; }
+
+h4 {
+  color: #444048; }
 
 .nav {
   width: 100%; }
@@ -111,12 +128,12 @@ h4 {
 /*INDEX*/
 .containerl {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 6fr 6fr;
   grid-template-rows: 0.7fr 1.5fr 1.5fr 0.5;
-  gap: 0px 0px;
+  gap: 0px;
   grid-auto-flow: row;
   grid-template-areas: "section1 section1" "section2 section3" "section4 section5" "footer footer";
-  width: 100%; }
+  width: 1275px; }
 
 .section1 {
   grid-area: section1;
@@ -127,27 +144,29 @@ h4 {
 .section1_img {
   width: 70rem;
   height: 30rem;
-  margin-top: 88px;
+  margin-top: 120px;
   margin-left: 80px; }
 
 .section2 {
   grid-area: section2;
-  height: 40rem;
-  width: 70%;
+  height: 30rem;
+  width: 100%;
   text-align: center;
   align-items: center; }
 
 .titlegalery {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: bold;
   font-style: italic; }
 
 .section3 {
   grid-area: section3;
-  height: 40rem;
+  height: 30rem;
   width: 100%;
   background-image: url(../fotos/index_img2.0.1.png);
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .section4 {
   grid-area: section4;
@@ -178,7 +197,7 @@ h4 {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px 10px;
   grid-auto-flow: row;
-  grid-template-areas: "opcion1 opcion2" "opcion3 opcion4" "opcion5 opcion6";
+  grid-template-areas: "card_1 card_2" "card_3 card_4" "card_5 card_6";
   grid-area: section5;
   height: 70rem; }
 
