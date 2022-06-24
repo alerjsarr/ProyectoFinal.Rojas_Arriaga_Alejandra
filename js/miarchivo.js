@@ -86,19 +86,63 @@ agregarClases()
 
 
 
-/*
 //DOM Y EVENTOS EN PÁGINA: CREAR CUENTA
+
 //FUNCIONES
 const enviarForm = (e) => {
     e.preventDefault()
     const nombreApellido = e.target[0].value
     const correoE = e.target[1].value
+    const password= e.target[2].value
 
-//Si quitamos el required de los id
-    if (!nombreApellido || !correoE){
-        console.log('Ingresa los datos correspodientes');
+    if (!nombreApellido || !correoE || !password ){
+        const alertfalseCC= ()=>{
+            Swal.fire({
+                position: 'center',
+                icon: 'warning',
+                title: 'Ingresa tus datos y acepta los Terminos y Condiciones para poder crear tu cuenta',
+                showConfirmButton: true,
+                timer: 4000
+              })
+        }
+        
+        const botonCC= document.querySelector ('#buttonCrearCuenta').addEventListener ('click',alertfalseCC)
         return
     }
+    else{
+        const alertCC= ()=>{
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Espera un momento!',
+                text: 'Te estamos redirigiendo a tu nueva cuenta',
+                showConfirmButton: false,
+                timer: 4000
+              })
+        }
+        const botonCC= document.querySelector ('#buttonCrearCuenta').addEventListener ('click',alertCC)
+
+    }
+
+
+
+    //no me agarra este if... 
+    if (!checkbox){
+        const alertCB1= ()=>{
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Requieres aceptar los Terminos y Condiciones para poder crear una cuenta',
+                showConfirmButton: true,
+                timer: 4000
+              })
+        }
+        const checkbox= document.querySelector ('#exampleCheck1')  
+       
+    }
+
+//Esto podría ir en local storage? 
+
     console.log('Datos de Usuario: ')
     console.log(nombreApellido,correoE)
 }
@@ -107,14 +151,27 @@ const form = document.querySelector('#formulariocrearcuenta')
 console.log(form)
 form.addEventListener ('submit', enviarForm)
 
-//LOCAL STORAGE
-localStorage.setItem('usuario', 'Nombre y Apelido')
-const usuario = localStorage.getItem ('usuario')
-console.log(usuario);
-*/
 
 
-//EJEMPLO PRÁCTICO DOM. Si es util, este codigo se queda. 
+
+
+
+// //LOCAL STORAGE (CORREGIR!)
+// localStorage.setItem('Usuario', 'Correo Electronico')
+// const usuario = localStorage.getItem ('usuario')
+// console.log(usuario);
+
+
+
+
+
+
+
+
+
+
+
+CARDS DEL INDEX 
 
 class PaquetesdeClases{
     constructor (cantidad, precio, moneda){
@@ -125,15 +182,15 @@ class PaquetesdeClases{
 }
 const opcion1 = new PaquetesdeClases ('1', 185, 'MXN') 
 const opcion2= new PaquetesdeClases('5', 850,'MXN')
-const opcion3= new PaquetesdeClases('10', 1,400, 'MXN')
-const opcion4= new PaquetesdeClases('15', 1,950, 'MXN')
-const opcion5= new PaquetesdeClases('25', 3,150, 'MXN')
-const opcion6= new PaquetesdeClases('50', 5,500, 'MXN')
+const opcion3= new PaquetesdeClases('10', 1400, 'MXN')
+const opcion4= new PaquetesdeClases('15', 1950, 'MXN')
+const opcion5= new PaquetesdeClases('25', 3150, 'MXN')
+const opcion6= new PaquetesdeClases('50', 5500, 'MXN')
 
 const paquetes = [opcion1, opcion2, opcion3, opcion4, opcion5, opcion6]
 
 const cardContainer = document.querySelector ('#section5')
-//estan en color blanco los numeros,si se ven, aqui es donde puedes checar los nombres de las variables de scss para los colores y agrega clase de prueba. Si es util, este codigo se queda. 
+
 paquetes.forEach ((paquete)=> {
     const card = document.createElement('div')
     card.className='card'
@@ -151,5 +208,3 @@ cardContainer.append(card)
 
 const cardNumbers = document.querySelectorAll ('.card')
 console.log(cardNumbers);
-
-
