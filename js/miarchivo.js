@@ -152,26 +152,13 @@ console.log(form)
 form.addEventListener ('submit', enviarForm)
 
 
-
-
-
-
 // //LOCAL STORAGE (CORREGIR!)
 // localStorage.setItem('Usuario', 'Correo Electronico')
 // const usuario = localStorage.getItem ('usuario')
 // console.log(usuario);
 
 
-
-
-
-
-
-
-
-
-
-CARDS DEL INDEX 
+//CARDS DEL INDEX 
 
 class PaquetesdeClases{
     constructor (cantidad, precio, moneda){
