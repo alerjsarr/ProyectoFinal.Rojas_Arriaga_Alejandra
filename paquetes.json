@@ -1,0 +1,11 @@
+
+
+[
+    {"nombre": "PaqueteClasedePueba", "precio": 150, "moneda":"MXN", "id": 1},
+    {"nombre": "Paquete1Clase", "precio": 185, "moneda":"MXN", "id": 2},
+    {"nombre": "Paquete5Clases", "precio": 850, "moneda":"MXN", "id": 3},
+    {"nombre": "Paquete10Clases", "precio": 1400, "moneda":"MXN", "id": 4},
+    {"nombre": "Paquete15Clases", "precio": 1950, "moneda":"MXN", "id": 5},
+    {"nombre": "Paquete25Clases", "precio": 3150, "moneda":"MXN", "id": 6},
+    {"nombre": "Paquete50Clases", "precio": 5500, "moneda":"MXN", "id": 7}  
+]
