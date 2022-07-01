@@ -60,7 +60,8 @@ body {
 .card {
   background-color: black;
   border: 2px solid white;
-  text-align: center; }
+  text-align: center;
+  align-items: center; }
   .card:hover {
     opacity: 1;
     border: solid 5px white; }
@@ -132,8 +133,7 @@ h4 {
   grid-template-rows: 0.7fr 1.5fr 1.5fr 0.5;
   gap: 0px;
   grid-auto-flow: row;
-  grid-template-areas: "section1 section1" "section2 section3" "section4 section5" "footer footer";
-  width: 1275px; }
+  grid-template-areas: "section1 section1" "section2 section3" "section4 section5" "footer footer"; }
 
 .section1 {
   grid-area: section1;

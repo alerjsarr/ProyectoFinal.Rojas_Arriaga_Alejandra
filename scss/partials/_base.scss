@@ -16,6 +16,7 @@ body{
     background-color: black;
     border: $optionborder;
     text-align: center;
+    align-items: center;
     &:hover{
       opacity: 1;
       border: solid 5px white;}
