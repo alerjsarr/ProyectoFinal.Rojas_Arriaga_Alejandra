@@ -10,7 +10,7 @@
   color: #370355;
   text-align: start; }
 
-.button-54, .button-galeria, .button-o {
+.button-54, .button-galeria, .menuTab {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
@@ -33,12 +33,12 @@
   color: white;
   width: 17rem; }
 
-.button-o {
+.menuTab {
   border-color: white;
   background-color: black;
   color: white; }
 
-.button-54:active, .button-galeria:active, .button-o:active {
+.button-54:active, .button-galeria:active, .menuTab:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px; }
@@ -82,7 +82,7 @@ body {
   color: #370355;
   text-align: start; }
 
-.button-54, .button-galeria, .button-o {
+.button-54, .button-galeria, .menuTab {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
@@ -105,12 +105,12 @@ body {
   color: white;
   width: 17rem; }
 
-.button-o {
+.menuTab {
   border-color: white;
   background-color: black;
   color: white; }
 
-.button-54:active, .button-galeria:active, .button-o:active {
+.button-54:active, .button-galeria:active, .menuTab:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px; }
@@ -290,7 +290,7 @@ h4 {
   grid-template-areas: "comprarclase_total comprarclase_total" "comprarclase_img comprarclase_form" "comprarclase_img comprarclase_form" "footer footer";
   width: 100%; }
 
-.comprarclase_paquetes {
+.comprarclasePaquetes {
   grid-area: comprarclase_total;
   background-color: #310e68;
   background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
@@ -298,10 +298,20 @@ h4 {
   padding: 20px;
   font-size: small;
   text-align: center;
-  height: 17rem; }
+  height: 17rem;
+  justify-content: space-around; }
+
+.seleccionaPaquetetitle {
+  text-align: start; }
 
 .resumendecompraPrecio {
   font-size: 3rem; }
+
+.botontitle {
+  font-size: 15px; }
+
+.botonprice {
+  font-size: 15px; }
 
 .comprarclase_img {
   grid-area: comprarclase_img;

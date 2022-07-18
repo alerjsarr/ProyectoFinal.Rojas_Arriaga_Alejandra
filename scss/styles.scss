@@ -189,20 +189,28 @@ margin-left: 250px;
     width: 100%;
 }
 
-.comprarclase_paquetes{ grid-area: comprarclase_total;
+.comprarclasePaquetes{ grid-area: comprarclase_total;
   background-color: #310e68;
   background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
   line-height: 1.3;
   padding: 20px;
   font-size: small;
-  text-align: center;
+  text-align:center;
   height: 17rem;
+  justify-content:space-around;
 }
-
+.seleccionaPaquetetitle{
+  text-align: start;
+}
 .resumendecompraPrecio{
   font-size: 3rem;
 }
-
+.botontitle{
+  font-size: 15px;
+}
+.botonprice{
+  font-size: 15px;
+}
 .comprarclase_img { grid-area: comprarclase_img;
   background-image: url(../fotos/compraclaseimg.png);
   background-size: cover;
