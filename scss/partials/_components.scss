@@ -1,6 +1,6 @@
 //NAV
 .navbar{
-    height: 5.5rem;
+    height: 5rem;
 }
 .nav-item{
     color: rgb(55, 3, 85);
@@ -24,12 +24,13 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     width: 15rem;
-    height: 5rem;
+    height: 4rem;
   }
       .button-galeria{
         @extend .button-54;
         border-color: rgb(208, 201, 201);
-        color: white
+        color: white;
+        width: 17rem;
       }
       .button-o{
         @extend .button-54;
@@ -51,12 +52,12 @@ $optionborder:2px solid white;
 //MAP
 $l:rgb(255, 255, 255);
 $m: rgb(173, 98, 170);
-$s: rgb(68, 64, 72);
+$s: rgb(96, 89, 103);
 
 $cards:(
   l:rgb(255, 255, 255), 
   m:rgb(173, 98, 170),
-  s:rgb(68, 64, 72),
+  s:rgb(96, 89, 103),
 );
 
 $l:map-get($cards, l );

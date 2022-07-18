@@ -4,7 +4,7 @@
   padding: 0; }
 
 .navbar {
-  height: 5.5rem; }
+  height: 5rem; }
 
 .nav-item {
   color: #370355;
@@ -26,11 +26,12 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 15rem;
-  height: 5rem; }
+  height: 4rem; }
 
 .button-galeria {
   border-color: #d0c9c9;
-  color: white; }
+  color: white;
+  width: 17rem; }
 
 .button-o {
   border-color: white;
@@ -50,7 +51,7 @@ h3 {
   color: #ad62aa; }
 
 h4 {
-  color: #444048; }
+  color: #605967; }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -75,7 +76,7 @@ body {
     border: solid 5px white; }
 
 .navbar {
-  height: 5.5rem; }
+  height: 5rem; }
 
 .nav-item {
   color: #370355;
@@ -97,11 +98,12 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 15rem;
-  height: 5rem; }
+  height: 4rem; }
 
 .button-galeria {
   border-color: #d0c9c9;
-  color: white; }
+  color: white;
+  width: 17rem; }
 
 .button-o {
   border-color: white;
@@ -121,7 +123,7 @@ h3 {
   color: #ad62aa; }
 
 h4 {
-  color: #444048; }
+  color: #605967; }
 
 .nav {
   width: 100%; }
@@ -137,9 +139,9 @@ h4 {
 
 .section1 {
   grid-area: section1;
-  height: 45rem;
-  background-color: #310e68;
-  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%); }
+  height: 48rem;
+  background-color: black;
+  background-image: url(../fotos/index3.0.png); }
 
 .section1_img {
   width: 70rem;
@@ -149,7 +151,7 @@ h4 {
 
 .section2 {
   grid-area: section2;
-  height: 30rem;
+  height: 40rem;
   width: 100%;
   text-align: center;
   align-items: center; }
@@ -157,13 +159,14 @@ h4 {
 .titlegalery {
   font-size: 5rem;
   font-weight: bold;
-  font-style: italic; }
+  font-style: italic;
+  margin-top: 50px; }
 
 .section3 {
   grid-area: section3;
-  height: 30rem;
+  height: 40rem;
   width: 100%;
-  background-image: url(../fotos/index_img2.0.1.png);
+  background-image: url(../fotos/section3img2.0.png);
   background-size: cover;
   margin-top: 10px;
   margin-bottom: 10px; }
@@ -171,7 +174,6 @@ h4 {
 .section4 {
   grid-area: section4;
   height: 70rem;
-  width: 45rem;
   margin: 10px;
   background-image: url(/fotos/indoor_8.png);
   background-size: cover; }
@@ -199,7 +201,8 @@ h4 {
   grid-auto-flow: row;
   grid-template-areas: "card_1 card_2" "card_3 card_4" "card_5 card_6";
   grid-area: section5;
-  height: 70rem; }
+  height: 70rem;
+  flex-flow: row wrap; }
 
 /*RESERVAR CLASES*/
 .mainreservarclase {
@@ -287,18 +290,18 @@ h4 {
   grid-template-areas: "comprarclase_total comprarclase_total" "comprarclase_img comprarclase_form" "comprarclase_img comprarclase_form" "footer footer";
   width: 100%; }
 
-.comprarclase_total {
+.comprarclase_paquetes {
   grid-area: comprarclase_total;
   background-color: #310e68;
   background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
   line-height: 1.3;
   padding: 20px;
   font-size: small;
-  text-align: justify;
-  height: 10rem; }
+  text-align: center;
+  height: 17rem; }
 
-.resumendecompra__precio {
-  font-size: 2rem; }
+.resumendecompraPrecio {
+  font-size: 3rem; }
 
 .comprarclase_img {
   grid-area: comprarclase_img;
