@@ -1,7 +1,6 @@
 
 // //DOM Y EVENTOS EN PÁGINA: CREAR CUENTA
 
-// // //FUNCIONES
 const enviarForm = (e) => {
     e.preventDefault()
     const nombreApellido = e.target[0].value

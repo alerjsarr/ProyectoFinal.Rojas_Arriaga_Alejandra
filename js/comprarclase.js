@@ -1,17 +1,25 @@
-//DECLARACIONES
-//-------------------------
-// const opciones = [opcion1, opcion2, opcion3, opcion4, opcion5, opcion6];
+
+class Paquetes{
+    constructor (id, cantidad, objeto, precio, moneda){
+        this.id=id
+        this.cantidad = cantidad
+        this.objeto= objeto
+        this.precio = precio
+        this.moneda = moneda
+    }
+}
+const paquete1= new Paquetes('001','1','clase x', '$185', 'MXN') 
+const paquete2= new Paquetes('002','5', 'clases x', '$850','MXN')
+const paquete3= new Paquetes('003','10','clases x', '$1400', 'MXN')
+const paquete4= new Paquetes('004','15','clases x', '$1950', 'MXN')
+const paquete5= new Paquetes('005','25','clases x', '$3150', 'MXN')
+const paquete6= new Paquetes('006','50','clases x', '$5500', 'MXN')
+
 const allPaquetes=[paquete1,paquete2,paquete3,paquete4,paquete5,paquete6]
 
-
-
-
-//QUERY DE ELEMENTOS
-//-------------------------
 const PaquetesButtonContainer=document.querySelector('.comprarclasePaquetes')
 
-//FUNCIONES
-//-------------------------
+
 const renderizarPaquetes=()=>{
     allPaquetes.forEach((paquete)=>{
         const paquetesButton= document.createElement('button')
@@ -42,49 +50,7 @@ const addListenerBotones=()=>{
 }
 
 
-
-//EVENTLISTENERS
-//-------------------------
-
-
-//EJECUCIONES
-//-------------------------
 renderizarPaquetes()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const cardContainer = document.querySelector ('#section5')
-
-// opciones.forEach ((opcion)=> {
-//         const card = document.createElement('div')
-//         card.className='card'
-//         card.innerHTML= `
-//         <h2>${opcion.cantidad}</h2>
-//         <h3>${opcion.objeto}</h3>
-//         <h4>${opcion.precio} ${opcion.moneda}</h4>
-//         <button onclick="location.href='http://127.0.0.1:5500/html/comprar_clase.html'" data-id="${opcion.cantidad}" class="buttoncards">AQUIERE TUS CLASES!</button>
-      
-//         `
-//     cardContainer.append(card)
-// })
-
-
-
-
-
-
 
 
 
@@ -123,11 +89,4 @@ renderizarPaquetes()
 //     imprimirCarrito()
 // }
 
-//ver si esa redireccion funciona
-// const redireccionComprarClases=window.location.href='../comprar_clase.html'
-// const botonesIndex=document.querySelectorAll('.buttoncards')
-// botonesIndex.forEach((botonIndex)=>{
-//     botonIndex.addEventListener('click', redireccionComprarClases)
-
-// })
     
