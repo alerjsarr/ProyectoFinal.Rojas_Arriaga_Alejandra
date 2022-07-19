@@ -1,6 +1,4 @@
 
-// //DOM Y EVENTOS EN PÁGINA: CREAR CUENTA
-
 const enviarForm = (e) => {
     e.preventDefault()
     const nombreApellido = e.target[0].value
@@ -18,10 +16,9 @@ const enviarForm = (e) => {
               })
         }
         
-        const botonCC= document.querySelector ('#buttonCrearCuenta').addEventListener ('click',alertfalseCC)
+        const botonCCF= document.querySelector ('#buttonCrearCuenta').addEventListener ('click',alertfalseCC)
         return
-    }
-    else{
+    }else{
         const alertCC= ()=>{
             Swal.fire({
                 position: 'center',
@@ -32,15 +29,12 @@ const enviarForm = (e) => {
                 timer: 4000
               })
         }
-        const botonCC= document.querySelector ('#buttonCrearCuenta').addEventListener ('click',alertCC)
-
+        const botonCCT= document.querySelector ('#buttonCrearCuenta').addEventListener ('click',alertCC)
     }
 
-
-
-    //no me agarra este if... 
+    const checkbox=document.querySelector('#exampleCheck1').checked
     if (!checkbox){
-        const alertCB1= ()=>{
+        console.log(checkbox);
             Swal.fire({
                 position: 'center',
                 icon: 'error',
@@ -49,22 +43,26 @@ const enviarForm = (e) => {
                 timer: 4000
               })
         }
-        const checkbox= document.querySelector ('#exampleCheck1')  
        
-    }
-
-//Esto podría ir en local storage? 
-
     console.log('Datos de Usuario: ')
     console.log(nombreApellido,correoE)
-}
+    let datosUsuario={
+        nombreApellido:nombreApellido,
+        correoE:correoE,
+    }
+    localStorage.setItem('datosUsuario', JSON.stringify(datosUsuario))
+
+    if(checkbox){
+        setTimeout(()=>{
+            window.location.href='http://127.0.0.1:5500/html/reserva_clase.html';
+        },600);
+
+    }
+    
+    }
 
 const form = document.querySelector('#formulariocrearcuenta')
 console.log(form)
 form.addEventListener ('submit', enviarForm)
 
 
-//LOCAL STORAGE (CORREGIR!)
-localStorage.setItem('Usuario', 'Correo Electronico')
-const usuario = localStorage.getItem ('usuario')
-console.log(usuario);

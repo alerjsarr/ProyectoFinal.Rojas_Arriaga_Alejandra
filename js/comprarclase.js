@@ -49,7 +49,6 @@ const addListenerBotones=()=>{
     })  
 }
 
-
 renderizarPaquetes()
 
 
